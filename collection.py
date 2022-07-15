@@ -33,26 +33,3 @@ class Collection(BaseDB):
     def delete_all_movies(self):
         self.delete_all()
         return self
-
-# username = urllib.parse.quote_plus("lenatester")
-# password = urllib.parse.quote_plus("Oliasc1@")
-# url = "mongodb+srv://{}:{}@cluster0.llrpg.mongodb.net/movies?retryWrites=true&w=majority".format(username, password)
-# my_client = MongoClient(url)
-
-# mydb = my_client["movies"]
-# my_collection = mydb["movies"]
-# movie_1 = {'title': 'The Dark Knight', 'year': '2008', 'genres': ['Action', 'Crime', 'Drama']}
-# movie_list = [{'title': 'Spirited Away', 'year': '2001', 'genres': ['Animation', 'Adventure', 'Family']},
-              #{'title': 'Casablanca', 'year': '1942', 'genres': ['Drama', 'Romance', 'War']},
-              #{'title': 'Titanic', 'year': '1997', 'genres': ['Drama', 'Romance']}]
-# my_movie = my_collection.insert_one(movie_1)
-# new_movies = my_collection.insert_many(movie_list)
-# print(my_movie.inserted_id)
-# print(new_movies.inserted_ids)
-
-# all_movies = my_collection.find()
-# for movie in all_movies:
-    #print(movie)
-
-#for movie in my_collection.find({'title': 'Casablanca'}):
-    #print(movie)
