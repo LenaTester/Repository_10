@@ -31,7 +31,4 @@ class BaseDB:
         return self.my_collection.delete_many({})
 
 
-#self.my_client.close()
-
-
 
